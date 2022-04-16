@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--带包的全类名-->
+<mapper namespace="com.cloud.dao.PaymentDao">
+    <!-- 标签以及要执行的sql语句-->
+
+    <resultMap id="Payment" type="Payment">
+        <id property="id" column="id"/>
+        <result property="serial" column="serial"/>
+    </resultMap>
+
+    <insert id="create" useGeneratedKeys="true" keyProperty="id">
+        insert into db2019.payment(serial)values (#{serial});
+    </insert>
+
+    <select id="getPaymentById" resultType="Payment">
+        select * from db2019.payment where id = #{id,jdbcType=BIGINT}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,17 @@
+server:
+  port: 80
+eureka:
+  client:
+    register-with-eureka: true    #表识不向注册中心注册自己
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+logging:
+  level:
+    com.cloud.service.PaymentFeignService: debug
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        probability: 1
