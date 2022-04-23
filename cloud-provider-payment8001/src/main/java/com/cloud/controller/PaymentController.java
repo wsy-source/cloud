@@ -1,7 +1,7 @@
 package com.cloud.controller;
 
-import com.cloud.bean.CommonResult;
-import com.cloud.bean.Payment;
+import com.cloud.CommonResult;
+import com.cloud.Payment;
 import com.cloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

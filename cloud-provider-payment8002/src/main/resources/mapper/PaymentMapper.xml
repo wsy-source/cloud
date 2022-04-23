@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--带包的全类名-->
-<mapper namespace="com.cloud.dao.PaymentDao">
+<mapper namespace="com.cloud.com.cloud.bean.dao.PaymentDao">
     <!-- 标签以及要执行的sql语句-->
 
     <resultMap id="Payment" type="Payment">

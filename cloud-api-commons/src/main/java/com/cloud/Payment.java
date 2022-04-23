@@ -1,4 +1,4 @@
-package com.cloud.bean;
+package com.cloud;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

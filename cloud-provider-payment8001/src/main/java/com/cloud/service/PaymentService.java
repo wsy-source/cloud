@@ -1,6 +1,6 @@
 package com.cloud.service;
 
-import com.cloud.bean.Payment;
+import com.cloud.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

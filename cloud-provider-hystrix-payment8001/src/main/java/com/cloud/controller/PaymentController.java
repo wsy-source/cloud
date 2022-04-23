@@ -1,7 +1,7 @@
 package com.cloud.controller;
 
-import com.cloud.bean.CommonResult;
-import com.cloud.bean.Payment;
+import com.cloud.CommonResult;
+import com.cloud.Payment;
 import com.cloud.service.PaymentService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;

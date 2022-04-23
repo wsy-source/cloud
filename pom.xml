@@ -29,6 +29,14 @@
         <module>StreamMQMain8801</module>
         <module>StreamMQMain8802</module>
         <module>StreamMQMain8803</module>
+        <module>cloudalibaba-provider-payment9001</module>
+        <module>cloud-alibaba-order83</module>
+        <module>cloud-alibaba-config-nacos-client3377</module>
+        <module>cloud-alibaba-sentinel-service8401</module>
+        <module>cloud-alibaba-consumer84</module>
+        <module>seata-order-service2001</module>
+        <module>seata-order-service2002</module>
+        <module>seata-order-service2003</module>
     </modules>
     <packaging>pom</packaging>
 
