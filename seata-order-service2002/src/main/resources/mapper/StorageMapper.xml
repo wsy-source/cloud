@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--带包的全类名-->
+<mapper namespace="com.cloud.dao.StorageDao">
+    <!-- 标签以及要执行的sql语句-->
+    <update id="decrease">
+        update seata_storage.t_storage
+        <set>
+            <if test="count != null">
+                total = total-#{count},
+            </if>
+        </set>
+        <where>
+            <if test="productId != null">
+                and product_id = #{productId}
+            </if>
+        </where>
+    </update>
+</mapper>

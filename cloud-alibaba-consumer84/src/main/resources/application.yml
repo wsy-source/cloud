@@ -1,0 +1,30 @@
+server:
+  port: 84
+
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: cloudalibaba-sentinel-com.cloud.bean.service
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+  application:
+    name: cloud-consumer-order
+feign:
+  sentinel:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

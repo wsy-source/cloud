@@ -1,0 +1,14 @@
+server:
+  port: 83
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+  application:
+    name: nacos-order-consumer83
+
+service:
+  paymentUrl: http://nacos-payment-provider

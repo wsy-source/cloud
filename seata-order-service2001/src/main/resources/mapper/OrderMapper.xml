@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--带包的全类名-->
+<mapper namespace="com.cloud.dao.OrderDao">
+
+    <!-- 标签以及要执行的sql语句-->
+    <insert id="createOrder">
+        insert into seata_order.t_order(id, user_id, product_id, count, money, status)
+        VALUES (#{id},#{userId,jdbcType=BIGINT},#{productId,jdbcType=BIGINT},#{count},#{money},0)
+    </insert>
+    <update id="updateStatusById">
+        update seata_order.t_order
+        <set>
+            status = 1,
+        </set>
+        <where>
+            and user_id = #{userId}
+        </where>
+    </update>
+
+</mapper>
